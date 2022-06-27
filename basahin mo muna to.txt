@@ -1,0 +1,10 @@
+So bali yung sql file pala is hindi mo naman na need basta tingnan mo lang yung connection kung ano name ng database na andun.
+
+1.)Go to your localhost/phpmyadmin
+          -if hindi gumagana tingnan mo yung port nung sa xampp mo tapos ilagay mo sunod sa "localhost"
+              ex. localhost:8080/phpmyadmin
+2.) Next is create a database click mo lang yung "new" tapos pangalanan mo ng "database_student" and click "create"
+3.) after mo maka create ng database automatic gagawa kana ng table tapos ilagay mo sa name is "student_info" and ilagay mo sa column is 4
+4.)tapos bali colum na 4 yung value nun is "id,name,email,contact" sa id clcik mo yung A_I para autoinrement tapos sa name and email yung type nun is VARCHAR
+    tapos length is 100 tapos sa contact varchar din and length is 50 kasi number lang and click go
+5.) open mo na yung website go to another tab type localhost/nameofthefolder if iniba mo port mo ilagay mo muna port mo ex.localhost:8080/nameofthefolder 

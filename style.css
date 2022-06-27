@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box */
+}
+
+body,
+html {
+    height: 100%;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+main {
+    padding: 25px 15px;
+}
+
+.wrapper {
+    display: block;
+    text-align: center;
+    min-width: 600px;
+}
+.wrapper table{
+    margin-top: 20px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+    display: block;
+    margin-bottom: 25px;
+}
+
+.title h2,
+.title hr {
+    width: 500px;
+}
+
+.title h2 {
+    display: inline-block;
+    text-align: left;
+}
+
+.title hr {
+    width: 600px;
+    display: block;
+    margin: 5px auto;
+}
+
+.create hr {
+    border: 1px solid #1BA345;
+}
+
+.update hr {
+    border: 1px solid #FEC001;
+}
+
+table {
+    border-collapse: collapse;
+    color: #333;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    font-size: 15px;
+    font-family: sans-serif;
+    margin: 0 auto;
+    min-width: 600px;
+}
+
+table th,
+table td {
+    padding: 15px 25px;
+    text-align: center;
+}
+thead tr {
+    background-color: #2196f3;
+}
+
+thead th {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+tbody tr {
+    border-top: 2px solid #dddddd;
+    border-bottom: 2px solid #dddddd;
+    color: white;
+    font-size: 17px;
+}
+tbody tr td{
+  background:none;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+input {
+    display: block;
+    width: 360px;
+    background: #fff;
+    color: #000;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    border: 0;
+    outline: 0;
+    padding: 15px 25px;
+    font-size: 18px;
+}
+
+.btnReset,
+button {
+    display: block;
+    background: #2196f3;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    cursor: pointer;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.btnSearch,
+.btnReset {
+    width: 120px;
+}
+
+.btnReset {
+    background: #FEC001;
+}
+
+.btnCreate,
+.btnUpdate,
+.btnWrapper a,
+.btnAction,
+.btnAction.btnUpdate {
+    display: inline-block;
+    padding: 5px 8px;
+    border: none;
+    border-radius: 2px;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.btnWrapper a,
+.btnCreate,
+.btnUpdate {
+    padding: 15px 30px;
+    background: #1BA345;
+}
+
+.btnAction.btnUpdate {
+    margin-right: 5px;
+    background: #FEC001;
+}
+
+.btnDelete {
+    background: #DE3E44;
+}
+
+.btnWrapper a {
+    background: #2c6dde;
+    color: whitesmoke;
+    margin-top: 10px;
+}
+.frmCreate,
+.frmUpdate {
+    display: inline-block;
+    margin: 0 auto 20px;
+}
+
+.frmCreate input,
+.frmUpdate input {
+    display: block;
+    width: 500px;
+    margin-bottom: 15px;
+}
+
+.frmCreate button,
+.frmUpdate button {
+    display: block;
+    color: #fefefe;
+}
+
+.frmCreate button {
+    background: #1BA345;
+}
+
+.frmUpdate button {
+    background: #FEC001;
+}
+
+.btnWrapper {
+    display: block;
+    text-align: center;
+}
+
+.btnWrapper button,
+.btnWrapper a {
+    display: inline-block;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.btnWrapper button:hover,
+.btnWrapper a:hover {
+    opacity: 0.5;
+}
+
+.msg {
+    position: absolute;
+    top: -500px;
+    left: calc(50% - 200px);
+    padding: 20px;
+    color: #fefefe;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    width: 400px;
+    text-align: center;
+    animation: hideDiv 2.5s ease;
+    border-radius: 10px;
+}
+
+@keyframes hideDiv {
+    0%   { top: -60px; }
+    10%  { top: 20px; }
+    90%  { top: 20px; }
+    100% { top: -60px; }
+}
+
+.msg-create {
+    background: #1BA345;
+}
+
+.msg-update {
+    background: #FEC001;
+}
+
+.msg-delete {
+    background: #DE3E44;
+}
